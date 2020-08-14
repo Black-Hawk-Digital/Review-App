@@ -19,6 +19,8 @@ const Header = ()=>(
                         <NavDropdown.Item href="/technology">Technology</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/science">Science</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="/users">Users</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>

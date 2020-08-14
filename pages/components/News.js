@@ -9,7 +9,7 @@ const News = ({category, data}) => (
             }
         </h3>
         {
-            data && data.length < 1 && <div style={{ textAlign: 'center' }}>Getting news...</div>
+            data && data.length < 1 && <div style={{ textAlign: 'center' }}>Getting news...Error Upgrade NewsApi to use it in production Mode </div>
         }
         {
             data && data.length > 0 &&
