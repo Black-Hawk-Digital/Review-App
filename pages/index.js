@@ -7,6 +7,7 @@ const Index = ()=> (
     <Header />
 
     <main style={{display:'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <h1>*******Only Users pages Work in the production********</h1>
     <h1>Welcome to Reviews Tool!</h1>
     <p>Get all your reviews on one page</p>
     </main>
