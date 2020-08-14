@@ -1,6 +1,7 @@
 // https://medium.com/better-programming/how-to-use-async-await-with-axios-in-react-e07daac2905f
 import Header from './layouts/Header';
-import { Table } from "react-bootstrap";
+import { Table, Button } from "react-bootstrap";
+import Link from 'next/link';
 import React from "react";
 import axios from "axios";
 export default class App extends React.Component {
@@ -39,10 +40,11 @@ getUsers = async () => {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Avatar</th>
+                        {/* <th>Avatar</th> */}
                         <th>First Name</th>
                         <th>Last Name</th>
-                        <th>Email</th>
+                        {/* <th>Email</th> */}
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,10 +56,11 @@ getUsers = async () => {
                            <>
                            <tr key={i}>
                             <td>{i+1}</td>      
-                            <td><img style={{width:'20%',height:'auto', borderRadius:'50%'}} src={e.avatar} /></td>
+                            {/* <td><img style={{width:'20%',height:'auto', borderRadius:'50%'}} src={e.avatar} /></td> */}
                             <td>{e.first_name}</td>
                             <td>{e.last_name}</td>
-                            <td>{e.email}</td>
+                            {/* <td>{e.email}</td> */}
+                            <td><Link href="/components/user/[id]" as={`components/user/${e.id}`} variant="primary">Read More</Link></td>
       
                         </tr>
                        </>
